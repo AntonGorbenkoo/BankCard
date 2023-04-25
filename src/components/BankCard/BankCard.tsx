@@ -101,14 +101,12 @@ export const BankCard = () => {
   const onInputCvv = (e: any) => {
     const regExp = /^[0-9]{3}$/;
     if (regExp.test(e.target.value) && e.target.value.length === 3) {
-      console.log(e.target.value);
       setValueCvv(e.target.value);
       inpCvv.current?.classList.add(classes.valid);
       inpCvv.current?.classList.remove(classes.invalid);
       setValidCvv(true);
     } else {
       setValidCvv(false);
-      console.log(e.target.value);
       inpCvv.current?.classList.remove(classes.valid);
       inpCvv.current?.classList.add(classes.invalid);
     }
