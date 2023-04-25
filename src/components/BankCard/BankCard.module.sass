@@ -1,0 +1,218 @@
+.wrapper
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 30px
+  flex-direction: column
+
+  .cardsSides
+    position: relative
+    perspective:800px
+    width: 425px
+    height: 270px
+    padding: 30px
+
+    .frontSide
+      position: absolute
+      top: 0
+      left: 0
+      transition: 0.8s
+      backface-visibility: hidden
+      z-index: 100
+
+    .frontSideOne
+      opacity: 0
+      transform: rotateY(-180deg)
+
+    .cardPanel
+      width: 425px
+      height: 270px
+      margin: 0 auto
+      text-align: center
+      border: 1px solid greenyellow
+      border-radius: 20px
+      background-color: gold
+      color: black
+      padding: 30px 
+
+    .cardNumber
+      font-size: 23px
+      padding: 150px 0 15px
+      text-align: center
+      letter-spacing: 7px
+      display: flex
+      justify-content: center
+      
+      .one
+        margin-right: 30px
+      .two
+        margin-right: 30px
+      .three
+        margin-right: 30px
+
+    .info
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-top: 30px
+
+      .owner
+        font-size: 20px
+
+    .cardDate
+      display: flex
+      justify-content: center
+
+  .btnData
+    width: 100px
+    margin-top: 20px
+    background-color: black
+    border: none
+  
+  .backSide
+    display: flex
+    justify-content: center
+    width: 425px
+    height: 270px
+    top: 0
+    left: 0
+    padding: 30px
+    position: absolute
+    background-color: #FFD700 
+    backface-visibility: hidden
+    opacity: 0
+    z-index: 1
+    border-radius: 20px 
+    transition: 0.8s
+    transform: rotateY(180deg)
+
+    .blackLine
+      height: 55px
+      background-color: #303030
+      margin-top: 40px
+      border-radius: 3px
+    .cvv
+      display: flex
+      justify-content: center
+      align-items: center
+
+      .leftCvv
+        width: 300px
+        height: 40px
+        background-color: grey
+        margin-top: 50px
+        border-radius: 3px
+
+      .rightCvv
+        width: 50px
+        height: 35px
+        background-color: #fff
+        margin-top: 50px
+        border-radius: 3px
+        text-align: center
+
+    .visa
+      display: flex
+      justify-content: center
+      margin-top: 20px
+
+  .backSideOne
+    opacity: 1
+    transform: rotateY(0deg) 
+    
+  .newData
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 425px
+    padding: 30px
+    margin-top: 20px
+    border: 1px solid greenyellow
+    border-radius: 20px
+    background-color: #a9a9a9 
+
+    .inputGroup
+      display: flex
+      flex-direction: column
+
+    .inputNumber
+      width: 290px
+      height: 25px
+      border-radius: 10px
+      padding-left: 10px
+      &:focus
+        outline: none
+      &:placeholder
+        color: black
+        
+    .invalid
+      border: 3px solid red
+      background-color: rgb(147, 93, 93)
+
+    .valid
+      border: 3px solid green
+      background-color: rgb(81, 117, 69)
+      font-weight: 700
+
+    .inputName
+      width: 290px
+      height: 25px
+      border-radius: 10px
+      outline: none
+      padding-left: 10px
+
+    .inputDate
+      width: 90px
+      height: 25px
+      outline: none
+      padding-left: 10px
+      border-radius: 10px
+
+    .inputCvv
+      width: 90px
+      height: 25px
+      outline: none
+      padding-left: 10px
+      border-radius: 10px
+
+  .DateCvv
+    display: flex
+    justify-content: space-between
+
+    .date
+      display: flex
+      flex-direction: column
+
+    .cvv
+      display: flex
+      flex-direction: column 
+
+  .clsButton
+    width: 100px
+    height: 25px
+    background-color: green
+    margin-top: 20px
+    border: none
+    color: black
+    &:focus
+      border: none
+
+  .resButton
+    width: 100px
+    height: 25px
+    background-color: yellow
+    border: none
+    color: black
+    margin-left: 3px
+    &:focus
+      border: none
+
+  .sendButton
+    width: 100px
+    height: 25px
+    background-color: red
+    border: none
+    color: black
+    &:focus
+      border: none
+
